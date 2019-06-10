@@ -1,4 +1,4 @@
-# Monostack theme
+# Monostack theme (including the French translation)
 
 Monostack is a Gutenberg-ready WordPress theme that brings the beauty of code editors to the frontend. With a strong focus on typography and color, Monostack highlights specific grammar much like syntax highlighting does in code editors. Monostack is named after the "monospace" font stacks used throughout the theme.
 
@@ -27,7 +27,7 @@ pre, code {
 ```
 ### Syntax Highlighting
 
-Monostack uses syntax highlighting to pop certain grammar from the English language. 
+Monostack uses syntax highlighting to pop certain grammar from the English or French language. 
 
 * Blue words are conjunctions
 * Pink words are prepositions
