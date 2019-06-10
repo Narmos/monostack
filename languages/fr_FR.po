@@ -1,113 +1,741 @@
-# Copyright (C) 2017 Automattic
-# This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: monostack 2.0.4\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/tags/monostack\n"
-"POT-Creation-Date: 2016-12-23 16:00+0100\n"
-"PO-Revision-Date: 2019-06-10 10:22+0200\n"
+"Project-Id-Version: Monostack\n"
+"POT-Creation-Date: 2019-06-10 11:35+0200\n"
+"PO-Revision-Date: 2019-06-10 12:48+0200\n"
 "Last-Translator: Narmos <narmos@bluewin.ch>\n"
-"Language-Team: \n"
+"Language-Team: Narmos <narmos@bluewin.ch>\n"
 "Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.3\n"
+"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oups ! Cette page est introuvable."
+#: 404.php:16
+msgid "Oops! Page not found."
+msgstr "Oups! Page introuvable."
 
-#: 404.php:21
+#: 404.php:20
 msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
+"It looks like nothing was found at this location. Maybe try searching or "
+"selecting an item in the menu?"
 msgstr ""
-"Il semble qu'il n'y ait rien par ici, essayez peut-être un des liens ci-"
-"dessous ou une recherche ?"
-
-#: 404.php:30
-msgid "Most Used Categories"
-msgstr "Catégories les plus utilisées"
-
-#. translators: %1$s: smiley
-#: 404.php:47
-msgid "Try looking in the monthly archives. %1$s"
-msgstr "Tentez de regarder dans les archives mensuelles. %1$s"
+"On dirait que rien n’a été trouvé à cet endroit. Peut-être essayer de "
+"rechercher ou de sélectionner un élément dans le menu ?"
 
 #. translators: 1: title.
 #: comments.php:34
+#, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr "Un commentaire sur &ldquo; %1$s&rdquo;"
 
-#: comments.php:67
+#. translators: 1: comment count number, 2: title.
+#: comments.php:40
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s commentaire sur &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s commentaires sur &ldquo;%2$s&rdquo;"
+
+#: comments.php:63
 msgid "Comments are closed."
 msgstr "Les commentaires sont fermés."
 
-#: footer.php:18
+#: footer.php:24
+msgid "Computationally powered by"
+msgstr "Fièrement propulsé par"
+
+#: footer.php:26
 msgid "https://wordpress.org/"
 msgstr "https://wordpress.org/"
 
 #. translators: %s: CMS name, i.e. WordPress.
-#: footer.php:20
-msgid "Proudly powered by %s"
-msgstr "Fièrement propulsé par %s"
+#: footer.php:28
+msgid "WordPress"
+msgstr "WordPress"
 
 #. translators: 1: Theme name, 2: Theme author.
-#: footer.php:25
-msgid "Theme: %1$s by %2$s."
-msgstr "Thème: %1$s par %2$s."
+#: footer.php:33
+#, php-format
+msgid "Theme: %s"
+msgstr "Thème : %s"
 
 #: functions.php:47
 msgid "Primary"
 msgstr "Principal"
 
-#: functions.php:105
-msgid "Sidebar"
-msgstr "Barre latérale"
+#: functions.php:92
+msgid "Highlight"
+msgstr "Surbrillance"
+
+#: functions.php:97
+msgid "Dark Grey"
+msgstr "Gris foncé"
+
+#: functions.php:102
+msgid "Muted"
+msgstr "Muet"
 
 #: functions.php:107
-msgid "Add widgets here."
-msgstr "Ajouter des widgets ici."
+msgid "Light Grey"
+msgstr "Gris clair"
+
+#: functions.php:112
+msgid "Blue"
+msgstr "Bleu"
+
+#: functions.php:117
+msgid "Pink"
+msgstr "Rose"
+
+#: functions.php:122
+msgid "Green"
+msgstr "Vert"
+
+#: functions.php:127
+msgid "Purple"
+msgstr "Violet"
+
+#: functions.php:140
+msgid "Footer Widget"
+msgstr "Widget de Pied-de-page"
+
+#: functions.php:142
+msgid "Add widgets here to appear in your footer on all pages."
+msgstr ""
+"Ajoutez des widgets ici pour apparaître dans votre pied de page sur toutes "
+"les pages."
+
+# ne doit pas être traduit
+#: functions.php:177
+msgctxt "Noto Serif font: on or off"
+msgid "on"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:211
+msgid "I"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:212
+msgid "we"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:213
+msgid "me"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:214
+msgid "us"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:215
+msgid "you"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:216
+msgid "she"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:217
+msgid "he"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:218
+msgid "her"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:219
+msgid "him"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:220
+msgid "they"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:221
+msgid "them"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:222
+msgid "it"
+msgstr "????????????????????"
+
+#: functions.php:223 functions.php:233 functions.php:303
+msgid "that"
+msgstr "ce"
+
+#: functions.php:224 functions.php:270
+msgid "which"
+msgstr "lequel"
+
+#: functions.php:225 functions.php:268
+msgid "who"
+msgstr "qui"
+
+#: functions.php:226 functions.php:272
+msgid "whom"
+msgstr "que"
+
+#: functions.php:227 functions.php:271
+msgid "whose"
+msgstr "à qui"
+
+#: functions.php:228
+msgid "whichever"
+msgstr "celui qui"
+
+#: functions.php:229
+msgid "whoever"
+msgstr "qui"
+
+#: functions.php:230
+msgid "whomever"
+msgstr "quiconque"
+
+#: functions.php:231
+msgid "this"
+msgstr "ce"
+
+#: functions.php:232
+msgid "these"
+msgstr "ces"
+
+#: functions.php:234
+msgid "those"
+msgstr "ces"
+
+#: functions.php:235
+msgid "anybody"
+msgstr "quelqu'un"
+
+#: functions.php:236
+msgid "anyone"
+msgstr "quelqu'un"
+
+#: functions.php:237
+msgid "anything"
+msgstr "quelque chose"
+
+#: functions.php:238
+msgid "each"
+msgstr "chaque"
+
+#: functions.php:239 functions.php:283
+msgid "either"
+msgstr "non plus"
+
+#: functions.php:240
+msgid "everyone"
+msgstr "chacun"
+
+#: functions.php:241
+msgid "everybody"
+msgstr "tout le monde"
+
+#: functions.php:242
+msgid "everything"
+msgstr "tout"
+
+#: functions.php:243
+msgid "nobody"
+msgstr "personne"
+
+#: functions.php:244 functions.php:284
+msgid "neither"
+msgstr "ni"
+
+#: functions.php:245
+msgid "no one"
+msgstr "aucun"
+
+#: functions.php:246
+msgid "nothing"
+msgstr "aucun"
+
+#: functions.php:247
+msgid "somebody"
+msgstr "quelqu'un"
+
+#: functions.php:248
+msgid "one"
+msgstr "un"
+
+#: functions.php:249
+msgid "someone"
+msgstr "quelqu'un"
+
+#: functions.php:250
+msgid "something"
+msgstr "quelque chose"
+
+#: functions.php:251
+msgid "few"
+msgstr "peu de"
+
+#: functions.php:252
+msgid "many"
+msgstr "beaucoup de"
+
+#: functions.php:253 functions.php:287
+msgid "both"
+msgstr "l'un et l'autre"
+
+#: functions.php:254
+msgid "several"
+msgstr "plusieurs"
+
+#: functions.php:255
+msgid "any"
+msgstr "n'importe quel"
+
+#: functions.php:256
+msgid "all"
+msgstr "tout"
+
+#: functions.php:257
+msgid "some"
+msgstr "des"
+
+#: functions.php:258
+msgid "most"
+msgstr "plupart"
+
+#: functions.php:259
+msgid "none"
+msgstr "aucun"
+
+#: functions.php:260
+msgid "myself"
+msgstr "moi-même"
+
+#: functions.php:261
+msgid "yourself"
+msgstr "toi-même"
+
+#: functions.php:262
+msgid "ourselves"
+msgstr "nous-même"
+
+#: functions.php:263
+msgid "yourselves"
+msgstr "vous-même"
+
+#: functions.php:264
+msgid "herself"
+msgstr "elle-même"
+
+#: functions.php:265
+msgid "himself"
+msgstr "lui-même"
+
+#: functions.php:266
+msgid "themselves"
+msgstr "eux-mêmes"
+
+#: functions.php:267
+msgid "itself"
+msgstr "lui-même"
+
+#: functions.php:269
+msgid "what"
+msgstr "quoi"
+
+#: functions.php:276 functions.php:344
+msgid "for"
+msgstr "pour"
+
+#: functions.php:277
+msgid "and"
+msgstr "et"
+
+#: functions.php:278
+msgid "nor"
+msgstr "ni"
+
+#: functions.php:279
+msgid "but"
+msgstr "mais"
+
+#: functions.php:280
+msgid "or"
+msgstr "ou"
+
+#: functions.php:281
+msgid "yet"
+msgstr "encore"
+
+#: functions.php:282
+msgid "so"
+msgstr "ainsi"
+
+#: functions.php:285
+msgid "not only"
+msgstr "non seulement"
+
+#: functions.php:286
+msgid "but also"
+msgstr "mais aussi"
+
+#: functions.php:288
+msgid "whether"
+msgstr "qu'il s'agisse"
+
+#: functions.php:289
+msgid "although"
+msgstr "bien que"
+
+#: functions.php:290
+msgid "though"
+msgstr "bien que"
+
+#: functions.php:291
+msgid "even though"
+msgstr "quand bien même"
+
+#: functions.php:292
+msgid "as much as"
+msgstr "autant que"
+
+#: functions.php:293
+msgid "as long as"
+msgstr "aussi longtemps que"
+
+#: functions.php:294
+msgid "as soon as"
+msgstr "dès que"
+
+#: functions.php:295
+msgid "because"
+msgstr "parce que"
+
+#: functions.php:296 functions.php:357
+msgid "since"
+msgstr "depuis"
+
+#: functions.php:297
+msgid "so that"
+msgstr "pour que"
+
+#: functions.php:298
+msgid "in order that"
+msgstr "afin que"
+
+#: functions.php:299
+msgid "if"
+msgstr "si"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:300
+msgid "les"
+msgstr "????????????????????"
+
+# ne doit pas être traduit pour la surbrillance
+#: functions.php:301
+msgid "est"
+msgstr "????????????????????"
+
+#: functions.php:302
+msgid "even if"
+msgstr "même si"
+
+#: functions.php:304
+msgid "unless"
+msgstr "sauf si"
+
+#: functions.php:305 functions.php:334
+msgid "until"
+msgstr "jusqu’au"
+
+#: functions.php:306
+msgid "when"
+msgstr "quand"
+
+#: functions.php:307
+msgid "where"
+msgstr "ou"
+
+#: functions.php:311
+msgid "about"
+msgstr "à propos"
+
+#: functions.php:312
+msgid "beside"
+msgstr "à côté de"
+
+#: functions.php:313
+msgid "near"
+msgstr "proche"
+
+#: functions.php:314
+msgid "to"
+msgstr "à"
+
+#: functions.php:315
+msgid "above"
+msgstr "au-dessus"
+
+#: functions.php:316
+msgid "between"
+msgstr "entre"
+
+#: functions.php:317
+msgid "of"
+msgstr "de"
+
+#: functions.php:318
+msgid "towards"
+msgstr "vers"
+
+#: functions.php:319
+msgid "across"
+msgstr "à travers"
+
+#: functions.php:320
+msgid "beyond"
+msgstr "au-delà de"
+
+#: functions.php:321
+msgid "off"
+msgstr "de"
+
+#: functions.php:322
+msgid "under"
+msgstr "sous"
+
+#: functions.php:323
+msgid "after"
+msgstr "après"
+
+#: functions.php:324
+msgid "by"
+msgstr "par"
+
+#: functions.php:325
+msgid "on"
+msgstr "sur"
+
+#: functions.php:326
+msgid "underneath"
+msgstr "sous"
+
+#: functions.php:327
+msgid "against"
+msgstr "contre"
+
+#: functions.php:328
+msgid "despite"
+msgstr "en dépit de"
+
+#: functions.php:329
+msgid "onto"
+msgstr "sur"
+
+#: functions.php:330
+msgid "unlike"
+msgstr "à la différence de"
+
+#: functions.php:331
+msgid "along"
+msgstr "vers"
+
+#: functions.php:332
+msgid "down"
+msgstr "en bas"
+
+#: functions.php:333
+msgid "opposite"
+msgstr "vis à vis"
+
+#: functions.php:335
+msgid "among"
+msgstr "parmi"
+
+#: functions.php:336
+msgid "during"
+msgstr "durant"
+
+#: functions.php:337
+msgid "out"
+msgstr "en dehors"
+
+#: functions.php:338
+msgid "up"
+msgstr "en haut"
+
+#: functions.php:339
+msgid "around"
+msgstr "autour"
+
+#: functions.php:340
+msgid "except"
+msgstr "sauf"
+
+#: functions.php:341
+msgid "outside"
+msgstr "à l'extérieur"
+
+#: functions.php:342
+msgid "upon"
+msgstr "sur"
+
+#: functions.php:343
+msgid "as"
+msgstr "comme"
+
+#: functions.php:345
+msgid "over"
+msgstr "plus de"
+
+#: functions.php:346
+msgid "via"
+msgstr "via"
+
+#: functions.php:347
+msgid "at"
+msgstr "à"
+
+#: functions.php:348
+msgid "from"
+msgstr "de"
+
+#: functions.php:349
+msgid "past"
+msgstr "devant"
+
+#: functions.php:350
+msgid "with"
+msgstr "avec"
+
+#: functions.php:351
+msgid "before"
+msgstr "avant"
+
+#: functions.php:352
+msgid "in"
+msgstr "dans"
+
+#: functions.php:353
+msgid "round"
+msgstr "autour de"
+
+#: functions.php:354
+msgid "within"
+msgstr "dans"
+
+#: functions.php:355
+msgid "behind"
+msgstr "derrière"
+
+#: functions.php:356
+msgid "inside"
+msgstr "à l'intérieur de"
+
+#: functions.php:358
+msgid "without"
+msgstr "sans"
+
+#: functions.php:359
+msgid "below"
+msgstr "au dessous de"
+
+#: functions.php:360
+msgid "into"
+msgstr "dans"
+
+#: functions.php:361
+msgid "than"
+msgstr "que"
+
+#: functions.php:362
+msgid "beneath"
+msgstr "dessous"
+
+#: functions.php:363
+msgid "like"
+msgstr "comme"
+
+#: functions.php:364
+msgid "through"
+msgstr "jusqu'à"
 
 #: header.php:24
 msgid "Skip to content"
 msgstr "Aller au contenu"
 
-#: header.php:45
+#: header.php:44
 msgid "Primary Menu"
 msgstr "Menu principal"
 
+#. translators: %s: post author.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "par %s"
+
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:52
+#: inc/template-tags.php:46
 msgid ", "
 msgstr ", "
 
 #. translators: 1: list of categories.
-#: inc/template-tags.php:55
+#: inc/template-tags.php:49
+#, php-format
 msgid "Posted in %1$s"
 msgstr "Publié dans %1$s"
 
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:53
+msgctxt "list item separator"
+msgid ", "
+msgstr ", "
+
 #. translators: 1: list of tags.
-#: inc/template-tags.php:62
+#: inc/template-tags.php:56
+#, php-format
 msgid "Tagged %1$s"
 msgstr "Taggé %1$s"
 
 #. translators: %s: post title
-#: inc/template-tags.php:72
+#: inc/template-tags.php:66
+#, php-format
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 "Laisser un commentaire <span class=\"screen-reader-text\">sur %s</span>"
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:89 template-parts/content-page.php:35
+#: inc/template-tags.php:83
+#, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "Modifier <span class=\"screen-reader-text\">%s</span>"
 
 #. translators: %s: search query.
-#: search.php:21
-msgid "Search Results for: %s"
+#: search.php:20
+#, php-format
+msgid "Search results for: %s"
 msgstr "Résultats de recherche pour : %s"
 
 #: template-parts/content-none.php:14
@@ -116,6 +744,7 @@ msgstr "Aucun résultat"
 
 #. translators: 1: link to WP admin new post page.
 #: template-parts/content-none.php:25
+#, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
@@ -137,35 +766,42 @@ msgstr ""
 "Il semble que ce que vous cherchez est introuvable. Essayez une autre "
 "recherche."
 
-#: template-parts/content-page.php:22 template-parts/content.php:45
+#: template-parts/content-page.php:22 template-parts/content.php:46
 msgid "Pages:"
 msgstr "Pages :"
 
+#. translators: %s: Name of current post
+#: template-parts/content-page.php:31
+#, php-format
+msgid "Edit %s"
+msgstr "Modifier %s"
+
 #. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content.php:34
+#: template-parts/content.php:35
+#, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 "Poursuivre la lecture <span class=\"screen-reader-text”> \"%s\" </span>"
 
 #. Theme Name of the plugin/theme
-msgid "monostack"
-msgstr "monostack"
+msgid "Monostack"
+msgstr "Monostack"
 
 #. Theme URI of the plugin/theme
-msgid "https://github.com/mapk/monostack"
-msgstr "https://github.com/mapk/monostack"
+msgid "https://github.com/mapk/monostack/"
+msgstr "https://github.com/mapk/monostack/"
 
 #. Description of the plugin/theme
 msgid ""
 "Monostack is a Gutenberg-ready WordPress theme that brings the beauty of "
 "code editors to the frontend. With a strong focus on typography and color, "
 "Monostack highlights specific grammar much like syntax highlighting does in "
-"code editors. Monostack is named after the monospace font stacks used "
+"code editors. Monostack is named after the \"monospace\" font stacks used "
 "throughout the theme."
 msgstr ""
 "Monostack est un thème WordPress prêt pour Gutenberg qui apporte la beauté "
 "des éditeurs de code au frontend. Avec un accent fort sur la typographie et "
-"la couleur, monostack met en évidence la grammaire spécifique tout comme la "
+"la couleur, Monostack met en évidence la grammaire spécifique tout comme la "
 "coloration syntaxique fait dans les éditeurs de code. Monostack est nommé "
 "d'après les piles de polices monospace utilisées dans le thème."
 
@@ -174,31 +810,5 @@ msgid "Mark Uraine"
 msgstr "Mark Uraine"
 
 #. Author URI of the plugin/theme
-msgid "http://markuraine.com"
-msgstr "http://markuraine.com"
-
-#. translators: 1: comment count number, 2: title.
-#: comments.php:40
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s commentaire sur &ldquo;%2$s&rdquo;"
-msgstr[1] "%1$s commentaires sur &ldquo;%2$s&rdquo;"
-
-#. translators: %s: post date.
-#: inc/template-tags.php:29
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr "Publié le %s"
-
-#. translators: %s: post author.
-#: inc/template-tags.php:35
-msgctxt "post author"
-msgid "by %s"
-msgstr "par %s"
-
-#. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:59
-msgctxt "list item separator"
-msgid ", "
-msgstr ", "
+msgid "https://markuraine.com"
+msgstr "https://markuraine.com"
