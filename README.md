@@ -34,6 +34,7 @@ Monostack utilise la coloration syntaxique pour extraire certaines grammaires de
 * Les mots en bleu sont des conjonctions
 * Les mots en rose sont des prépositions
 * Les mots en vert sont des pronoms
-(variations possibles dans la traduction française)
+
+(la version française est moins complète et précise)
 
 ![Image of Monostack](https://cldup.com/sNkM_BJyoP.png)
